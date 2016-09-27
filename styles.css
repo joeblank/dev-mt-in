@@ -1,0 +1,30 @@
+.nav-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container {
+  display: flex;
+}
+.info-input-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.images-container {
+  margin-top: 200px;
+  width: 50%;
+  padding-left: 50px;
+}
+.image {
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-right: 200px solid #85FDF3;
+	border-bottom: 100px solid transparent;
+}

@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='dmSocial'>
 
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css" media="screen" title="no title">
+	<link rel="stylesheet" href="reset.css" media="screen" title="no title">
 	<title>DevMtin</title>
 </head>
 
-<body>
+<body ng-controller='mainController'>
+	<nav class="nav-container">
+		<div class="mag-glass">
+			<img src="images/Icons/Search.svg" alt="search img" />
+		</div>
+		<div class="dev-mountain">{{navTitle}}</div>
+		<div class="hamburger-menu">
+			<img src="images/Icons/Ham.svg" alt="menu" />
+		</div>
+	</nav>
 
-  
+	<main class='main-container'>
+		<section class='info-input-container'>
+			<div class="info-input-welcome">
+				{{welcome}}</br>
+				{{addInfo}}
+			</div>
+			<input type="text" name="name" placeholder='Full Name'>
+			<input type="text" name="name" placeholder='Tagline'>
+			<input type="text" name="name" placeholder='Profile Image Url'>
+			<input type="text" name="name" placeholder='Bio'>
+		</section>
+
+
+		<section class='images-container'>
+			<div class="image"></div>
+		</section>
+
+	</main>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js'></script>
+	<script src='js/app.js'></script>
+	<script src='js/mainController.js'></script>
+	<script src='js/mainService.js'></script>
+
 </body>
+
 </html>
