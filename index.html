@@ -26,18 +26,26 @@
 				{{welcome}}</br>
 				{{addInfo}}
 			</div>
-			<input type="text" name="name" placeholder='Full Name'>
-			<input type="text" name="name" placeholder='Tagline'>
-			<input type="text" name="name" placeholder='Profile Image Url'>
-			<input type="text" name="name" placeholder='Bio'>
+			<input class='input' type="text" name="name" placeholder='Full Name'>
+			<input class='input' type="text" name="name" placeholder='Tagline'>
+			<input class='input' type="text" name="name" placeholder='Profile Image Url'>
+			<input class='input' id='bio-box' type="text" name="name" placeholder='Bio'>
+			<button class='save-changes' type="button" name="button">{{buttonText}}</button>
 		</section>
 
 
 		<section class='images-container'>
 			<div class="image"></div>
+			<div class='image2'></div>
 		</section>
 
 	</main>
+
+	<footer class="footer">
+			<div >{{viewFriends}}</div>
+			<div >{{findFriends}}</div>
+			<div >{{updateProfile}}</div>
+	</footer>
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js'></script>
 	<script src='js/app.js'></script>
 	<script src='js/mainController.js'></script>
